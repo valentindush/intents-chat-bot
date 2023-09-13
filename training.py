@@ -54,3 +54,27 @@ training = np.array(training)
 
 train_x = list(training[:, 0])
 train_y = list(training[:, 1])
+
+model = Sequential()
+
+model.add(Dense(120, input_shape=(len(train_x[0]), ), activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+
+model.add(Dense(len(train_y[0]), activation='softmax'))
+
+
+# compiling the model
+learning_rate = 0.001
+momentum = 0.9
+nesterov = True
+optimizer = SGD(learning_rate=learning_rate, momentum=momentum, nesterov=nesterov)
+model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
+
+#fitting the model
+model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+
+#save the model
+model.save('chat_bot_model.model')
+print("DONE....")
