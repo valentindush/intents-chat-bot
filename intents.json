@@ -1,0 +1,34 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "What's up"],
+            "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Hello!, How are you", "What's good homie", "How're u doin"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye", "See you later", "Bye", "Farewell", "Take care"],
+            "responses": ["Goodbye!", "See you later!", "Bye, have a great day!", "Farewell, come back soon!", "Take care, friend!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "Appreciate it", "Thanks a lot", "You're helpful"],
+            "responses": ["You're welcome!", "You're too kind!", "No problem, happy to help!", "Glad I could assist!", "It's my pleasure!"]
+        },
+        {
+            "tag": "about_bot",
+            "patterns": ["Who are you?", "What can you do?", "Tell me about yourself", "What's your purpose?"],
+            "responses": ["I'm a friendly chatbot designed to assist you with information and tasks. Feel free to ask me anything!", "I'm here to help with your questions and tasks. Ask away!", "I'm your AI companion, here to provide information and assistance."]
+        },
+        {
+            "tag": "help",
+            "patterns": ["Help", "Can you assist me?", "I need some help", "Help me please"],
+            "responses": ["Of course, I'd be happy to help! What do you need assistance with?", "Sure, I'm here to assist you. How can I help?", "I'm here to assist you. Please let me know what you need."]
+        },
+        {
+            "tag": "unknown",
+            "patterns": ["I don't know", "I'm not sure", "I have no idea", "Confused", "What should I do now?"],
+            "responses": ["No worries, we all have those moments. If you have any questions, feel free to ask, and I'll do my best to assist you.", "It's okay not to know everything. If you have any questions or need guidance, just ask."]
+        }
+    ]
+}
