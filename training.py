@@ -73,8 +73,8 @@ optimizer = SGD(learning_rate=learning_rate, momentum=momentum, nesterov=nestero
 model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
 
 #fitting the model
-model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
 
 #save the model
-model.save('chat_bot_model.model')
+model.save('chatbot_model.h5', hist)
 print("DONE....")
