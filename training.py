@@ -4,6 +4,8 @@ import pickle
 import json
 import nltk
 from nltk.stem import WordNetLemmatizer
+nltk.download('punkt')
+nltk.download('wordnet')
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
@@ -66,7 +68,7 @@ model.add(Dense(len(train_y[0]), activation='softmax'))
 
 
 # compiling the model
-learning_rate = 0.001
+learning_rate = 0.01
 momentum = 0.9
 nesterov = True
 optimizer = SGD(learning_rate=learning_rate, momentum=momentum, nesterov=nesterov)
