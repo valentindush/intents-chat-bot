@@ -51,8 +51,10 @@ for document in documents:
   output_row[classes.index(document[1])] = 1
   training.append([bag, output_row])
 
+
 random.shuffle(training)
-training = np.array(training)
+
+training = np.array(training, dtype=object)
 
 train_x = list(training[:, 0])
 train_y = list(training[:, 1])
@@ -78,5 +80,5 @@ model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accurac
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
 
 #save the model
-model.save('chatbot_model.h5', hist)
+model.save('model.keras', hist)
 print("DONE....")

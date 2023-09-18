@@ -7,8 +7,8 @@
         },
         {
             "tag": "goodbye",
-            "patterns": ["Goodbye", "See you later", "Bye", "Farewell", "Take care"],
-            "responses": ["Goodbye!", "See you later!", "Bye, have a great day!", "Farewell, come back soon!", "Take care, friend!"]
+            "patterns": ["Goodbye", "See you later", "Bye", "Take care"],
+            "responses": ["Goodbye!", "See you later!", "Bye, have a great day!", "Take care, friend!"]
         },
         {
             "tag": "thanks",
