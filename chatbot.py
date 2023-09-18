@@ -56,7 +56,7 @@ def get_response(intents_list, intents_json):
 print('Go! Bot is running!')
 
 while True:
-    message = input('')
+    message = input('>_ ')
     ints = predict_class(message)
     res = get_response(ints, intents)
     print(res)
