@@ -4,7 +4,7 @@ A simple "manual" like Chat Bot using ``intents.json`` for training and tensorfl
 ### HOW TO RUN 
 
 #### PIP PACKAGES
-Run ``pip install requirements.txt`` to install all the required packages
+Run ``pip install -r requirements.txt`` to install all the required packages
 
 #### Training Data
 For the BOT to work well you need to add more training data in `intents.json` based on the field you want the bot to focus on.
